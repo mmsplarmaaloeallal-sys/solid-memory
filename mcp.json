@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "solid-memory": {
+      "command": "python",
+      "args": ["-m", "solid_memory.mcp_server"],
+      "env": {
+        "SOLID_MEMORY_DB": "./solid_memory.sqlite3"
+      }
+    }
+  }
+}
