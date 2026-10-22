@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solid-memory"
+version = "0.1.0"
+description = "Local provenance-aware knowledge memory with SQLite, integrity verification, and an MCP stdio server"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+solid-memory = "solid_memory.__main__:main"
+solid-memory-mcp = "solid_memory.mcp_server:main"
+
+[tool.setuptools.packages.find]
+include = ["solid_memory*"]
